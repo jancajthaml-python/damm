@@ -7,7 +7,7 @@ import damm
 
 ok = damm.Validate("00123014764700968325")
 
-digit := damm.Digit("x")
+digit = damm.Digit("x")
 
 signed = damm.Generate("1")
 ```
