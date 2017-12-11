@@ -14,8 +14,8 @@ class TestDamm(unittest.TestCase):
 
     for t in tests:
       number, expected = t
-      valid = damm.digit(number)
-      self.assertEqual(valid, expected, "damm.digit?(%(number)s) == %(valid)s, expected %(expected)s" % locals())
+      valid = damm.Digit(number)
+      self.assertEqual(valid, expected, "damm.Digit?(%(number)s) == %(valid)s, expected %(expected)s" % locals())
 
   def test_validate(self):
     tests = [
@@ -26,8 +26,8 @@ class TestDamm(unittest.TestCase):
 
     for t in tests:
       number, expected = t
-      valid = damm.validate(number)
-      self.assertEqual(valid, expected, "damm.validate?(%(number)s) == %(valid)s, expected %(expected)s" % locals())
+      valid = damm.Validate(number)
+      self.assertEqual(valid, expected, "damm.Validate?(%(number)s) == %(valid)s, expected %(expected)s" % locals())
 
   def test_generate(self):
     tests = [
@@ -36,8 +36,8 @@ class TestDamm(unittest.TestCase):
 
     for t in tests:
       number, expected = t
-      valid = damm.generate(number)
-      self.assertEqual(valid, expected, "damm.generate?(%(number)s) == %(valid)s, expected %(expected)s" % locals())
+      valid = damm.Generate(number)
+      self.assertEqual(valid, expected, "damm.Generate?(%(number)s) == %(valid)s, expected %(expected)s" % locals())
 
 if __name__ == '__main__':
   unittest.main()

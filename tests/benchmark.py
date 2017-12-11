@@ -12,5 +12,5 @@ def measure(name, stmt, setup, count):
   per_op_nanos = round(total_nanos / count, 1)
   print("%-18s%14s%20s ns/op" % (name, count, per_op_nanos))
 
-measure("damm.digit (small)", "damm.digit('123')", "import damm", BENCHMARK_ITERATIONS)
-measure("damm.digit (large)", "damm.digit('00123014764700968325')", "import damm", BENCHMARK_ITERATIONS)
+measure("damm.Digit (small)", "damm.Digit('123')", "import damm", BENCHMARK_ITERATIONS)
+measure("damm.Digit (large)", "damm.Digit('00123014764700968325')", "import damm", BENCHMARK_ITERATIONS)
